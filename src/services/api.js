@@ -12,7 +12,6 @@ export const STORAGE_KEYS = {
 };
 
 export const initializeDB = () => {
-  // No longer needed! MySQL strictly manages our database state natively.
   console.log("MySQL handles the state now, goodbye localStorage mocking!");
 };
 

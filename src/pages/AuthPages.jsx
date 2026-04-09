@@ -78,11 +78,11 @@ export const Login = ({ onNavigate }) => {
 
         <p className="auth-link" onClick={() => onNavigate('register')}>Create an account</p>
 
-        <div className="auth-demo">
+        {/*<div className="auth-demo">
           <p className="auth-demo-title">Demo Credentials Reference:</p>
-          <p>Admin: admin@test.com / password</p>
+           <p>Admin: admin@test.com / password</p> 
           <p>Student: student@test.com / password</p>
-        </div>
+        </div>*/}
       </Card>
     </div>
   );
