@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Directly maps to your running Spring Boot backend.
 const apiInstance = axios.create({
-  baseURL: 'http://localhost:8080/api',
+  baseURL: 'https://learnhubapp.up.railway.app/api',
   headers: { 'Content-Type': 'application/json' }
 });
 
