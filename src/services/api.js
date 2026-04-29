@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Directly maps to your running Spring Boot backend.
 const apiInstance = axios.create({
-  baseURL: 'https://learnhubapp.up.railway.app/api',
+  baseURL: 'https://learnhubhosting.onrender.com/api',
   headers: { 'Content-Type': 'application/json' }
 });
 
@@ -86,7 +86,7 @@ export const api = {
     
     // We use a separate direct axios call because apiInstance defaults to 'application/json'. 
     // Setting 'multipart/form-data' manually breaks the boundary injection in browsers!
-    const res = await axios.post('http://localhost:8080/api/files/upload', formData);
+    const res = await axios.post('https://learnhubhosting.onrender.com/api/files/upload', formData);
     return res.data.url; // Returns the URL path to the uploaded file
   },
 
